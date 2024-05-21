@@ -20,7 +20,7 @@
     padding: 0;
     overflow: auto; /* Ensure scrolling */
     text-transform: uppercase; /* Make all text uppercase */
-    font-family: 'Monument Extended', sans-serif; /* Apply font to all text */
+    font-family: 'Monument Extended Regular', sans-serif; /* Apply font to all text */
   }
   
   body {
@@ -83,6 +83,7 @@
     margin: 20px 0;
     font-size: 4em;
     text-align: center;
+    font-family: 'Monument Extended'; /* Apply font to titles */
     font-weight: 800;
   }
   
@@ -97,6 +98,7 @@
     padding: 20px;
     box-sizing: border-box;
     margin-top: 80px; /* Add margin-top to separate from navbar */
+    flex-grow: 1;
   }
   
   .input {
@@ -111,19 +113,14 @@
   }
   
   .button {
-    color: #17121d;
-    background: #7908fa; /* Adjusted button color */
-    padding: 15px 30px;
-    margin: 10px 0;
-    text-align: center;
-    text-decoration: none;
+    background: #7908fa; /* Purple button background */
+    padding: 10px 20px;
+    border: none;
     border-radius: 1000px;
     transition: background 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-size: 1.5em;
-    font-weight: bold;
-    outline: none;
+    font-family: 'Monument Extended Regular', sans-serif; /* Bold font for buttons */
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   }
   
   .button:hover {
@@ -177,12 +174,16 @@
   
   footer {
     width: 100%;
-    background-color: #26202e; /* Adjusted footer color */
     color: #e0e0e0;
     text-align: center;
     padding: 10px 0;
     position: relative;
+    left: 0;
+    right: 0;
     bottom: 0;
-    margin-top: auto; /* Push the footer to the bottom */
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
   }
   
