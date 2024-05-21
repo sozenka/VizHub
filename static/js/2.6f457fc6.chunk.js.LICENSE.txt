@@ -5,18 +5,27 @@ object-assign
 */
 
 /*!
- * @kurkle/color v0.3.2
+ * @kurkle/color v0.2.1
  * https://github.com/kurkle/color#readme
- * (c) 2023 Jukka Kurkela
+ * (c) 2022 Jukka Kurkela
  * Released under the MIT License
  */
 
 /*!
- * Chart.js v4.4.3
+ * Chart.js v3.9.1
  * https://www.chartjs.org
- * (c) 2024 Chart.js Contributors
+ * (c) 2022 Chart.js Contributors
  * Released under the MIT License
  */
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 
 /** @license React v0.20.2
  * scheduler.production.min.js
