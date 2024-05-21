@@ -1,0 +1,195 @@
+/* Import the Monument Extended font */
+@font-face {
+    font-family: 'Monument Extended';
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Monument Extended Regular';
+    src: url('fonts/MonumentExtended-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* General styles */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Ensure scrolling */
+    text-transform: uppercase; /* Make all text uppercase */
+    font-family: 'Monument Extended', sans-serif; /* Apply font to all text */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #17121d;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: #17121d; /* Adjusted header color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    font-family: 'Monument Extended Regular', sans-serif;
+  }
+  
+  .navbar-title {
+    color: #e0e0e0;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  
+  .logout-button {
+    color: #0a0a0a;
+    background: #7908fa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Monument Extended', sans-serif;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background: #6507d1;
+    transform: translateY(-2px);
+  }
+  
+  h1 {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 800;
+  }
+  
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    flex: 1; /* Take up remaining space */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 80px; /* Add margin-top to separate from navbar */
+  }
+  
+  .input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    font-family: 'Monument Extended', sans-serif; /* Apply font to input */
+  }
+  
+  .button {
+    color: #17121d;
+    background: #7908fa; /* Adjusted button color */
+    padding: 15px 30px;
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1000px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    color: #7908fa;
+    background: #17121d;
+    transform: translateY(-2px);
+  }
+  
+  .error-message {
+    color: #ff6b6b; /* red */
+    background-color: #ffe5e5; /* light red background */
+    border: 1px solid #ffcccc; /* border */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none; /* initially hidden */
+  }
+  
+  .error-message.visible {
+    display: block; /* show the message */
+  }
+  
+  .profile-card {
+    background-color: #26202e;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .profile-card h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #fff;
+    font-family: 'Monument Extended Regular', sans-serif;
+  }
+  
+  .profile-avatar {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+  }
+  
+  .chart-container {
+    margin-top: 20px;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #26202e; /* Adjusted footer color */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  footer.hidden {
+    display: none;
+  }
+  
+  footer.visible {
+    display: block;
+  }
+  
