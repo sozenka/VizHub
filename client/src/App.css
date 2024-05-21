@@ -26,7 +26,7 @@
   body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
     background: #17121d;
     color: #e0e0e0;
     margin: 0;
@@ -181,15 +181,8 @@
     color: #e0e0e0;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
-  }
-  
-  footer.hidden {
-    display: none;
-  }
-  
-  footer.visible {
-    display: block;
+    margin-top: auto; /* Push the footer to the bottom */
   }
   
