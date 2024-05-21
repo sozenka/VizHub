@@ -1,23 +1,21 @@
 {
   "files": {
     "main.css": "/VizHub/static/css/main.3ef80e2e.chunk.css",
-    "main.js": "/VizHub/static/js/main.af356d36.chunk.js",
-    "main.js.map": "/VizHub/static/js/main.af356d36.chunk.js.map",
-    "runtime-main.js": "/VizHub/static/js/runtime-main.1e22a78d.js",
-    "runtime-main.js.map": "/VizHub/static/js/runtime-main.1e22a78d.js.map",
-    "static/js/2.6f457fc6.chunk.js": "/VizHub/static/js/2.6f457fc6.chunk.js",
-    "static/js/2.6f457fc6.chunk.js.map": "/VizHub/static/js/2.6f457fc6.chunk.js.map",
-    "static/js/3.205c6280.chunk.js": "/VizHub/static/js/3.205c6280.chunk.js",
-    "static/js/3.205c6280.chunk.js.map": "/VizHub/static/js/3.205c6280.chunk.js.map",
+    "main.js": "/VizHub/static/js/main.b0a335dd.chunk.js",
+    "main.js.map": "/VizHub/static/js/main.b0a335dd.chunk.js.map",
+    "runtime-main.js": "/VizHub/static/js/runtime-main.13040eb8.js",
+    "runtime-main.js.map": "/VizHub/static/js/runtime-main.13040eb8.js.map",
+    "static/js/2.7b18daae.chunk.js": "/VizHub/static/js/2.7b18daae.chunk.js",
+    "static/js/2.7b18daae.chunk.js.map": "/VizHub/static/js/2.7b18daae.chunk.js.map",
     "index.html": "/VizHub/index.html",
     "static/css/main.3ef80e2e.chunk.css.map": "/VizHub/static/css/main.3ef80e2e.chunk.css.map",
-    "static/js/2.6f457fc6.chunk.js.LICENSE.txt": "/VizHub/static/js/2.6f457fc6.chunk.js.LICENSE.txt",
+    "static/js/2.7b18daae.chunk.js.LICENSE.txt": "/VizHub/static/js/2.7b18daae.chunk.js.LICENSE.txt",
     "static/media/App.css": "/VizHub/static/media/MonumentExtended-Regular.db74f7a5.otf"
   },
   "entrypoints": [
-    "static/js/runtime-main.1e22a78d.js",
-    "static/js/2.6f457fc6.chunk.js",
+    "static/js/runtime-main.13040eb8.js",
+    "static/js/2.7b18daae.chunk.js",
     "static/css/main.3ef80e2e.chunk.css",
-    "static/js/main.af356d36.chunk.js"
+    "static/js/main.b0a335dd.chunk.js"
   ]
 }
