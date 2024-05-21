@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/VizHub/static/css/main.3ef80e2e.chunk.css",
-    "main.js": "/VizHub/static/js/main.b0a335dd.chunk.js",
-    "main.js.map": "/VizHub/static/js/main.b0a335dd.chunk.js.map",
+    "main.js": "/VizHub/static/js/main.6919d3ec.chunk.js",
+    "main.js.map": "/VizHub/static/js/main.6919d3ec.chunk.js.map",
     "runtime-main.js": "/VizHub/static/js/runtime-main.13040eb8.js",
     "runtime-main.js.map": "/VizHub/static/js/runtime-main.13040eb8.js.map",
     "static/js/2.7b18daae.chunk.js": "/VizHub/static/js/2.7b18daae.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.13040eb8.js",
     "static/js/2.7b18daae.chunk.js",
     "static/css/main.3ef80e2e.chunk.css",
-    "static/js/main.b0a335dd.chunk.js"
+    "static/js/main.6919d3ec.chunk.js"
   ]
 }
