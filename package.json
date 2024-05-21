@@ -4,19 +4,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "node server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "deploy": "cd client && npm run deploy"
+    "dev": "concurrently \"npm run start\" \"npm run client\""
   },
   "dependencies": {
-    "axios": "^1.7.1",
-    "concurrently": "^8.2.2",
+    "axios": "^0.21.1",
+    "concurrently": "^6.0.0",
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "gh-pages": "^6.1.1",
-    "path": "^0.12.7",
-    "serve-static": "^1.15.0"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
   }
 }

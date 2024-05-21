@@ -1,14 +1,15 @@
 import axios from 'axios';
 import {
-    ArcElement,
-    Chart as ChartJS,
-    Legend,
-    Tooltip
+  ArcElement,
+  Chart as ChartJS,
+  Legend,
+  Tooltip
 } from 'chart.js';
 import React, { useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import './App.css';
 
+// Register required elements for Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function App() {
@@ -18,12 +19,12 @@ function App() {
   const [error, setError] = useState(null);
 
   const fetchProfile = async () => {
-    setError(null);
+    setError(null); // Reset error state before fetching
     try {
-      const profileData = await axios.get(`/api/profile/${username}`);
+      const profileData = await axios.get(`http://localhost:5000/api/profile/${username}`);
       setProfile(profileData.data);
 
-      const reposData = await axios.get(`/api/repos/${username}`);
+      const reposData = await axios.get(`http://localhost:5000/api/repos/${username}`);
       setRepos(reposData.data);
     } catch (error) {
       setError('Error fetching data. Please try again.');
@@ -54,7 +55,7 @@ function App() {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <button className="button" onClick={fetchProfile}>FETCH</button>
+        <button className="button" onClick={fetchProfile}>Fetch Profile</button>
 
         {error && <p className="error-message visible">{error}</p>}
 
@@ -79,7 +80,7 @@ function App() {
         )}
       </div>
       <footer>
-        <p>&copy; 2024 VizHub. Made by Sozenka.</p>
+        <p>&copy; 2024 VizHub</p>
       </footer>
     </div>
   );

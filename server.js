@@ -1,60 +1,49 @@
 const express = require('express');
-const axios = require('axios');
 const cors = require('cors');
+const axios = require('axios');
 const path = require('path');
+const app = express();
 require('dotenv').config();
 
-const app = express();
-const port = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
-app.use(express.json());
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-
-// API routes
 app.get('/api/profile/:username', async (req, res) => {
+  const { username } = req.params;
   try {
-    const { username } = req.params;
-    console.log(`Fetching profile for username: ${username}`);
     const response = await axios.get(`https://api.github.com/users/${username}`, {
       headers: {
-        Authorization: `token ${GITHUB_TOKEN}`
+        Authorization: `token ${process.env.GITHUB_TOKEN}`
       }
     });
-    console.log(`Profile data: ${JSON.stringify(response.data)}`);
     res.json(response.data);
   } catch (error) {
-    console.error('Error fetching profile data:', error);
-    res.status(500).send('Error fetching profile data');
+    console.error(`Error fetching profile for ${username}:`, error.message);
+    res.status(500).json({ message: 'Error fetching data' });
   }
 });
 
 app.get('/api/repos/:username', async (req, res) => {
+  const { username } = req.params;
   try {
-    const { username } = req.params;
-    console.log(`Fetching repos for username: ${username}`);
     const response = await axios.get(`https://api.github.com/users/${username}/repos`, {
       headers: {
-        Authorization: `token ${GITHUB_TOKEN}`
+        Authorization: `token ${process.env.GITHUB_TOKEN}`
       }
     });
-    console.log(`Repos data: ${JSON.stringify(response.data)}`);
     res.json(response.data);
   } catch (error) {
-    console.error('Error fetching repos data:', error);
-    res.status(500).send('Error fetching repos data');
+    console.error(`Error fetching repos for ${username}:`, error.message);
+    res.status(500).json({ message: 'Error fetching data' });
   }
 });
 
-// Serve static files from the React frontend app
-app.use(express.static(path.join(__dirname, 'client/build')));
-
-// Anything that doesn't match the above routes, send back index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
 });
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
