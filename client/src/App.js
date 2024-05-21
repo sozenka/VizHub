@@ -9,7 +9,6 @@ import React, { useState } from 'react';
 import { Pie } from 'react-chartjs-2';
 import './App.css';
 
-// Enregistrer les éléments requis pour Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
   const [error, setError] = useState(null);
 
   const fetchProfile = async () => {
-    setError(null); // Reset error state before fetching
+    setError(null);
     try {
       const profileData = await axios.get(`/api/profile/${username}`);
       setProfile(profileData.data);
@@ -55,7 +54,7 @@ function App() {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
-        <button className="button" onClick={fetchProfile}>Fetch Profile</button>
+        <button className="button" onClick={fetchProfile}>FETCH</button>
 
         {error && <p className="error-message visible">{error}</p>}
 
