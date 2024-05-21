@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "homepage": "https://sozenka.github.io/VizHub/",
-  "dependencies": {
+  "devdependencies": {
     "axios": "^1.7.1",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
