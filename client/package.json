@@ -5,13 +5,19 @@
   "homepage": "https://SOZENKA.github.io/vizhub",
   "dependencies": {
     "axios": "^1.7.1",
+    "chart.js": "^4.4.3",
     "concurrently": "^8.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "gh-pages": "^4.0.0",
     "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^17.0.2",
     "react-scripts": "^5.0.1",
-    "serve-static": "^1.15.0"
+    "serve-static": "^1.15.0",
+    "web-vitals": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
